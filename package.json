@@ -1,0 +1,17 @@
+{
+  "name": "rmg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rmg.js",
+  "scripts": {
+    "build": "browserify rmg.js -d > build/rmg.js",
+    "watch": "watchify rmg.js -o build/rmg.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mark Phillips <mbp@geomtech.com> (http://www.geomtech.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "immutable": "^3.7.6",
+    "sprintf": "^0.1.5"
+  }
+}
