@@ -11,6 +11,8 @@
   "author": "Mark Phillips <mbp@geomtech.com> (http://www.geomtech.com/)",
   "license": "ISC",
   "dependencies": {
+    "css-loader": "^0.23.1",
+    "style-loader": "^0.13.0",
     "immutable": "^3.7.6",
     "sprintf": "^0.1.5"
   }

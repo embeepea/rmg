@@ -1,3 +1,4 @@
+require("./style.css");
 var Immutable = require('immutable');
 var sprintf = require('sprintf');
 
@@ -44,8 +45,10 @@ function Mg(props) {
         var w = state.canvas.width;
         var h = state.canvas.height;
         var d = Math.min(w,h);
-        state.xPixel = linearInterpolator(coords[0][0], coords[1][0], (w-d)/2, (w+d)/2);
-        state.yPixel = linearInterpolator(coords[0][1], coords[1][1], (h+d)/2, (h-d)/2);
+        state.xPixel = linearInterpolator(coords[0][0], coords[1][0],
+                                          (w-d)/2, (w+d)/2);
+        state.yPixel = linearInterpolator(coords[0][1], coords[1][1],
+                                          (h+d)/2, (h-d)/2);
         state.canvasSized = false;
     };
     this.updateState = function(props) {
@@ -110,8 +113,8 @@ props = {
     id: "canvas",
     coords: [[-1,-1],[1,1]],
     box: [[-0.8, -0.8], [0.8, 0.8]],
-    background: "#000000",
-    linecolor: "#ffffff",
+    background: "#cc0000",
+    linecolor: "#000000",
     x: 0.5,
     y: -0.5,
     window: {
